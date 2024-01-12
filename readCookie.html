@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ function ReadCookie()
+{
+with(document.form1)
+{
+    name1=document.cookie.split('=')[0];//using split method
+value = document.cookie.split('=')[1];
+//var value=document.cookie;//simple method to read cookie
+document.write ("Name=:"+name1+"<br/>Value : " + value);
+}
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<input type="button" value="Read Cookie" onclick="ReadCookie()"/>
+</form>
+</body>
+</html>

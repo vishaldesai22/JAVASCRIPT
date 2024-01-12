@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ function DeleteCookie()
+{
+expiryDate=new Date()
+expiryDate.setMonth(expiryDate.getMonth()-1) // Earlier date of expiry is set
+with(document.form1)
+{
+document.cookie="UserName"+username.value+";" ;
+document.cookie="expires="+expiryDate.toUTCString ()+";";
+ alert("Cookie Deleted");
+}
+}
+</script>
+</head>
+<body>
+<form name="form1">
+Enter name: <input type="text" name="username"/>
+<input type="button" value="Delete Cookie" onclick="DeleteCookie()"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"> 
+function SetExpDtCookie()
+{
+expiryDate=new Date
+ expiryDate.setMonth(expiryDate.getMonth()+1) 
+ with(document.form1)
+{
+document.cookie="UserName"+username.value+";" 
+document.cookie="expires="+expiryDate.toUTCString ()+";" 
+alert("New expiry Date is set for the Cookie");
+}
+}
+</script>
+</head>
+<body>
+<form name="form1">
+Enter name: <input type="text" name="username"/>
+<input type="button" value="Set New Expiry Date" onclick="SetExpDtCookie()"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>PRIME NUMBER DEMO</title> Output
+</head>
+<body>
+<script type="text/javascript">
+var num=prompt("Type number here.","");
+var b;
+var flag=1;
+for(i=2;i<num;i++)
+{
+b=num%i;
+if(b==0)
+{
+flag=0;
+break;
+}
+}
+if(flag==0)
+alert(num+" is not a prime number");
+else
+alert(num+" is a prime number");
+</script>
+</body>
+</html>

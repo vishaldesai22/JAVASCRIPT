@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Methods in JavaScript</title>
+  <script>
+    var a = {
+            fname : 'SGM',
+            lname : 'Poly',
+            age : 25,
+            email: 'hello@gmail.com',
+            favMovies: ['Dhoom', 'Sholay', 'Hum'],
+            salary : function(){
+                return 25000;
+            },
+            fullname : function(){
+                return this.fname + " " + this.lname;
+            }
+        }
+   
+        document.write(a.salary() + "<br>");
+        document.write(a.fullname() + "<br>");
+  </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"> 
+function CreateCookie()
+{
+with(document.form1)
+{
+document.cookie="UserName"+username.value+";"
+alert("Cookie is created");
+}
+}
+</script>
+<head>
+<body>
+<form name="form1">
+Enter Name: <input type="text" name="username"/>
+<input type="button" value="Create Cookie" onclick="CreateCookie()"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var a=100//Global variable
+function A()
+{
+document.getElementById("id1").innerHTML="From function A(): a = "+a
+}
+function B()
+{
+document.getElementById("id2").innerHTML="From function B(): a = "+a
+}
+</script>
+</head>
+<body>
+<p id="id1"></p>
+<p id="id2"></p>
+<script type="text/javascript">
+A()
+B()
+</script>
+</body>
+</html>

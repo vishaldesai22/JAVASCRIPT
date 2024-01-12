@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    <script>
+        var str = "JavaScript is a Great is Language";
+        var str2 = "Hello";
+        var str3 = 50;
+        document.write("Original string::"+str+"<br>");
+       var a = str.charAt(3);  /* CharAt Method */
+       document.write("char at method 3::"+ a + "<br>");
+
+        var b = str.charCodeAt(4); /* CharCodeAt Method ,returns unicode*/
+        document.write("char code at 4::"+ b + "<br>");
+
+		var d = str.concat(str2); /* Concat Method */
+        document.write("string concatenation::"+ d + "<br>");
+
+        var e = str.split(" "); /* Split Method */
+        document.write("String split::"+ e + "<br>");
+
+        var f = str.repeat(2); /* Repeat Method */
+        document.write("String repeat::" + f + "<br>");
+
+        var g = str.slice(3,10); /* Slice Method */
+        document.write("Slice method::"+ g + "<br>");
+
+        var h = str.substr(2,5); /* Substr Method */
+        document.write("Substr method ::"+ h + "<br>");
+
+        var i = str.substring(2,5); /* Substring Method */
+        document.write("Substring Method::"+ i + "<br>");
+
+        var j = str3.toString(); /* Tostring Method */ 
+        document.write("Tostring Method::"+j + 20 + "<br>");
+        
+        var k = str.valueOf(); /* Valueof Method */
+        document.write("Valueof Method::"+ k + "<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>

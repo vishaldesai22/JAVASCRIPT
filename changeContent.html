@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ function OpenWindowFunction()
+{
+var mywin=window.open("","MyWindow","width=200,height=200")
+mywin.document.write("<p> Hello user ..welcome This line is written in current window</p>");
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<input type="button" value="Open Window" onclick="OpenWindowFunction()"/>
+</form>
+</body>
+</html>

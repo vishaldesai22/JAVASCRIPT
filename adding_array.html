@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for Loop Demo</title>
+</head>
+<body>
+<script type="text/javascript">
+a=new Array();
+a[0]=10;
+a[1]=20;
+a[2]=30
+a[3]=40
+a[4]=50;
+document.write("The elements in the array are...<br/>");
+for(i=0;i<a.length;i++)
+{
+document.write(a[i]+" ");
+}
+document.write("<br/><br/>The element is added in the array...<br/>");
+a[a.length]=60;
+document.write("<br/>Now, The elements in the array are...<br/>");
+for(i=0;i<a.length;i++)
+{
+document.write(a[i]+" ");
+}
+</script>
+</body>
+</html>

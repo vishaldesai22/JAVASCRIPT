@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript</title>
+<script>
+	let object = {
+		name: "ABC",
+		email: "xyz@abc.com",
+		age: 10,
+		contact: 1234567890,
+		place: "Earth",
+		country: "India",
+	};
+	document.write(object.name+" <br>"+object.email+"<br>"+object.age+"<br>"+object.contact+"<br>"+object.place+"<br>"+object.country);
+	console.log(object);
+
+	// Removing some properties
+	// from the above created object
+	delete object.age; // age property deletion
+	console.log(object);
+	document.write("<br><h3>After deleting property::<h3><br>"+object.name+" <br>"+object.email+
+	"<br>"+object.age+"<br>"+object.contact+"<br>"+object.place+"<br>"+object.country);
+	// country property deletion
+	delete object["country"];
+	document.write("<br><h3>After deleting property::<h3><br>"+object.name+" <br>"+object.email+"<br>"
+	+object.age+"<br>"+object.contact+"<br>"+object.place+"<br>"+object.country);
+	console.log(object);
+	delete object.place; // place property deletion
+	document.write("<br><h3>After deleting property::<h3><br>"+object.name+" <br>"+object.email+
+	"<br>"+object.age+"<br>"+object.contact+"<br>"+object.place+"<br>"+object.country);
+	console.log(object);
+</script>
+</head>
+<body>
+</body>
+</html>

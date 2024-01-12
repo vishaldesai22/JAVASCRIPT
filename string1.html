@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    <script>
+		var str = "     JavaScript is a Great is Language";
+		var a = str.length;  /* Length Method */
+		var b = str.toLowerCase(); /* LowerCase Method */
+		var c = str.toUpperCase(); /* UpperCase Method */
+		var d = str.includes("ipt"); /* Include Method */
+		var e = str.startsWith("Java"); /* StartWith Method */
+		var f = str.endsWith("age"); /* EndWith Method */
+		var g = str.search("is"); /* Search Method */
+		var h = str.match(/is/g); /* Match Method */
+		var i = str.indexOf("is"); /* IndexOf Method */
+		var j = str.lastIndexOf("is"); /* LastIndexOf Method */
+		var k = str.replace("JavaScript","PHP"); /* Replace Method */
+		var l = str.trim(); /* Trim Method */
+
+		document.write("length of a string=" +a + "<br>");
+		document.write("Lower Case converion::"+ b + "<br>");
+		document.write("Upper Case converion::"+ c + "<br>");
+		document.write("Includes::"+ d + "<br>");
+		document.write("Starts with Java::"+ e + "<br>");
+		document.write("Ends with 'age' ::"+ f + "<br>");
+		document.write("Search for 'is' ::"+ g + "<br>");
+		document.write(h + "<br>");
+		document.write("'is' at location "+ i + "<br>");
+		document.write("last index of  'is' ::"+ j + "<br>");
+		document.write("replace word::"+ k + "<br>");
+		alert(l);
+    </script>
+</head>
+<body>
+</body>
+</html>

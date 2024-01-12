@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+   <script>d1=new Date;
+   d1.setMonth(d1.getMonth()-1)//Delete cookie by setting month minus 1
+  // d1.setMonth(d1.getMonth()+1)//set expiry date by setting month plus 1
+   document.cookie="username=ram;expires="+d1.toUTCString()+";"
+   var getcookie=document.cookie();
+document.write(getcookie)
+   // document.write(d1)
+    </script> 
+</body>
+
+</html>
